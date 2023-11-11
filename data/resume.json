@@ -1,0 +1,204 @@
+{
+    "basics": {
+        "name": "ARNOLD TWALA",
+        "label": "Assistant Librarian (Acquisition Department)",
+        "email": "arnoldtwl@gmail.com",
+        "picture": "./arnold.png",
+        "website": "https://eagleknite.github.io/CV/",
+        "phone": "0727035123",
+        "location": {
+            "address": "Dzumeri (Ndhambi)",
+            "city": "Greater Giyani Municipality",
+            "countryCode": "ZA",
+            "region": "Limpopo"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "arnoldtwl",
+                "url": "https://www.linkedin.com/in/arnoldtwl/"
+            },
+            {
+                "network": "GitHub",
+                "username": "eagleknite",
+                "url": "https://github.com/eagleknite"
+            }
+        ],
+        "summary": "Holding a Bachelor's degree in Information Science from the University of Limpopo (Turfloop Campus) and a Full Stack Web Development certification from HyperionDev, I've journeyed from traditional librarianship to the forefront of modern web development. My professional path started with an internship at the University of Limpopo, leading to diverse roles such as Assistant Librarian in both Information Services and Acquisition departments. Over the years, my skill set expanded from managing electronic resources and record-keeping to mastering front-end and back-end web development. My portfolio showcases my adaptability, with projects ranging from temperature conversion programs to a comprehensive iTunes Search App. The latter, a full-stack application, is a testament to my proficiency in React, Redux, Node.js, and other cutting-edge technologies, underscoring my passion for leveraging technology in innovative and practical ways."
+    },
+    "work": [
+        {
+            "company": "University of Limpopo",
+            "position": "Internship",
+            "startDate": "2013-09-04",
+            "endDate": "2014-08-29",
+            "summary": "During my year-long internship at the University of Limpopo Library, I gained hands-on experience across Client Services, Acquisition Management, Information Services, and Technical Services. I honed my customer service skills, managed library resources, aided researchers with their informational needs using electronic databases, and learned cataloguing and classification of library materials. The internship provided me with a holistic understanding of the library's operations, particularly enjoying the challenges in the cataloguing section."
+        },
+        {
+            "company": "University of Limpopo",
+            "position": "Voluntary",
+            "startDate": "2014-09-01",
+            "endDate": "2014-11-28",
+            "summary": "In my role as a Voluntary Client Service member at the University of Limpopo, I managed the library's invoicing and lending system. I was responsible for creating and sending invoices for library dues, managing the library's circulation desk, and maintaining an updated list of students with overdue books for notification purposes."
+        },
+        {
+            "company": "University of Limpopo",
+            "position": "Assistant Librarian (Information Services)",
+            "startDate": "2014-12-01",
+            "endDate": "2015-05-31",
+            "summary": "As an Assistant Librarian for Information Services at the University of Limpopo, I served as the subject librarian for the School of Language and Communication. My duties included supervising shifts, assisting students and staff with research, conducting one-on-one advice sessions, and teaching users how to navigate the library's databases and online catalogue to enhance their self-research skills."
+        },
+        {
+            "company": "University of Limpopo",
+            "position": "Assistant Librarian (Acquisition)",
+            "startDate": "2015-06-01",
+            "endDate": "Present",
+            "summary": "In my current role as an Assistant Librarian in the Acquisition department at the University of Limpopo, I manage electronic resources, maintain records, and reconcile invoices with received materials. My deep understanding of financial terminology and my experience with Innovative Interfaces' integrated library system \u2013 Sierra, have proven instrumental in my work. Complementing these are my strong communication and interpersonal skills, which help me effectively supervise shifts. My programming skills, evidenced in the various projects I have developed and managed, demonstrate my talent for integrating technology into library services to enhance user experience."
+        }
+    ],
+    "education": [
+        {
+            "institution": "University of Limpopo (Turfloop Campus)",
+            "area": "Information Science",
+            "studyType": "Bachelor",
+            "endDate": "2013"
+        },
+        {
+            "institution": "HyperionDev",
+            "area": "Full Stack Web Development",
+            "studyType": "Course",
+            "endDate": "2023"
+        }
+    ],
+    "skills": [
+        {
+            "name": "E-Resources Management"
+        },
+        {
+            "name": "OCLC WorldShare"
+        },
+        {
+            "name": "Sierra"
+        },
+        {
+            "name": "HTML"
+        },
+        {
+            "name": "CSS"
+        },
+        {
+            "name": "JavaScript"
+        },
+        {
+            "name": "Node.js"
+        },
+        {
+            "name": "Express.js"
+        },
+        {
+            "name": "React"
+        },
+        {
+            "name": "Next.js"
+        },
+        {
+            "name": "Redux"
+        },
+        {
+            "name": "MongoDB"
+        },
+        {
+            "name": "Mongoose"
+        },
+        {
+            "name": "Axios"
+        },
+        {
+            "name": "Jest"
+        },
+        {
+            "name": "TailwindCSS"
+        },
+        {
+            "name": "Git"
+        },
+        {
+            "name": "GitHub"
+        },
+        {
+            "name": "Heroku"
+        },
+        {
+            "name": "Netlify"
+        },
+        {
+            "name": "Vercel"
+        },
+        {
+            "name": "Render"
+        },
+        {
+            "name": "RapidAPI"
+        },
+        {
+            "name": "Postman"
+        },
+        {
+            "name": "Visual Studio Code"
+        },
+        {
+            "name": "MongoDB Compass"
+        },
+        {
+            "name": "Postman"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Temperature Conversion Program",
+            "description": "An interactive program that allows a user to convert temperatures between Celsius, Fahrenheit, and Kelvin.",
+            "githubLink": "https://github.com/eagleknite/Temperature-Conversion-Program"
+        },
+        {
+            "name": "Complete Website",
+            "description": "A simple website that includes several features such as liking an article, saving articles for later, submitting forms, and posting comments.",
+            "githubLink": "https://github.com/eagleknite/CV"
+        },
+        {
+            "name": "Cypher Creator",
+            "description": "This program creates a cipher for messages based on shifting each character in the original message 15 places forward in the alphabet. It ensures that shifting is done in a circular manner, takes care of the case of the characters, and leaves spaces and punctuation marks unchanged.",
+            "githubLink": "https://github.com/eagleknite/Ceaser-Cypher-Program"
+        },
+        {
+            "name": "Employee Management System",
+            "description": "This program manages different kinds of employees in a sales department. It defines an Employee superclass and subclasses for salaried employees, hourly employees, and hybrid employees, and calculates and displays the payout for each type of employee.",
+            "githubLink": "https://github.com/eagleknite/Employee-Management-System"
+        },
+        {
+            "name": "City & Weather Information Server",
+            "description": "This program is a server that retrieves city and weather information from APIs provided by RapidAPI. It defines endpoints for getting the city and weather information based on the name of the city provided by the user.",
+            "githubLink": "https://github.com/eagleknite/city-weather-app"
+        },
+        {
+            "name": "Hangman Game",
+            "description": "The 'Hangman Game' project is a modern digital adaptation of the classic word-guessing game, developed using a robust technical stack. Built with React, it offers a dynamic user interface that responds to user interactions in real-time. Redux is integrated to manage the application's state efficiently, ensuring that game progress and user actions are tracked cohesively. The project utilizes React Router for seamless navigation between different parts of the application. Styling and responsiveness are achieved using TailwindCSS, providing a polished and adaptive user experience across various device sizes. The entire project was scaffolded using Create React App, streamlining the development process and offering a solid foundation for the application's structure.",
+            "githubLink": "https://github.com/eagleknite/hangman-game",
+            "deploymentLink": "https://hangman-game-n7vq.onrender.com/"
+        },
+        {
+            "name": "iTunes Search App",
+            "description": "The iTunes Search App is a full-stack application that provides a user-friendly interface for searching media on iTunes. The frontend offers features like a search bar, media type filter, sorting options, results grid display, and a favorites list. It's built using React, Redux, React Router, Axios, FontAwesome, and TailwindCSS. The backend, developed using Node.js and Express, offers an API endpoint for searching iTunes content and integrates middleware for security and CORS handling.",
+            "frontend": {
+                "description": "The client offers a search bar, media type filter, sorting options, results grid display, and a favorites list. It's developed using React, Redux, React Router, Axios, FontAwesome, and TailwindCSS.",
+                "githubLink": "https://github.com/eagleknite/itunes-client-side",
+                "deploymentLink": "https://search-itunes-store.onrender.com/"
+                
+            },
+            "backend": {
+                "description": "The backend provides an API endpoint for searching iTunes content and incorporates middleware for security and CORS handling. It's constructed using Node.js, Express, Axios, CORS, and Helmet.",
+                "githubLink": "https://github.com/eagleknite/itunes-search-app",
+                "deploymentLink": "https://itunes-search-app-ifbi.onrender.com/"
+            }
+        }
+    ]
+}

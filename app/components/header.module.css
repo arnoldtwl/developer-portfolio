@@ -1,0 +1,17 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: #333;
+}
+
+.navA {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+.navAhover:hover {
+    color:#fff;
+    background-color: #555;
+}

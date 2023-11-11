@@ -1,0 +1,46 @@
+.profile-info {
+    text-align: center;
+    gap: 1em;
+}
+
+.profile-image {
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin: 1em 0;
+}
+
+.heading {
+    margin: 0.5em 0;
+}
+
+.website {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+.website:hover {
+    text-decoration: underline;
+}
+
+.about,
+.section {
+    padding: 2em;
+    border-bottom: 1px solid #e6e8e9;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.skill {
+    background-color: #e6e8e9;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+}
+
+.work-item,
+.education-item {
+    margin-bottom: 2em;
+}

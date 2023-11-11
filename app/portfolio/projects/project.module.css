@@ -1,0 +1,32 @@
+.projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    width: 45%;
+    margin: 1em 0;
+    border: 1px solid #e1e1e1;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.h1 {
+    text-align: center;
+}
+
+.h2,
+.h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.a {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+.aHover:hover {
+    text-decoration: underline;
+}
