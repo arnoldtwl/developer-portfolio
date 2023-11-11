@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Developer Portfolio
 
-First, run the development server:
+## Description
+This project, named "developer-portfolio", serves as a personal portfolio website showcasing skills, projects, and work experiences. The application is built using the Next.js framework, a React framework offering hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Version
+1.0.0
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Setup and Installation
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install the necessary dependencies using `npm install`.
+4. To run the application in development mode, use `npm run dev`.
+5. To build the application for production, use `npm run build`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Scripts
+- `dev`: Runs the application in development mode using `next`.
+- `build`: Builds the application for production using `next build`.
+- `start`: Starts the application in production mode using `next start`.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Dependencies
+- **next**: 13.0.6
+- **react**: 18.2.0
+- **react-dom**: 18.2.0
 
-## Learn More
+## Components
+1. **Header**: A common header component displayed across all pages of the application.
+2. **Profile**: Displays the developer's profile information, including name, designation, contact details, and a profile image.
+3. **About**: Showcases the developer's background, education, skills, and work experience.
+4. **Projects**: Highlights the various projects undertaken by the developer, with descriptions and relevant links.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
+- React: A JavaScript library for building user interfaces.
+- Next.js: A React framework offering enhanced features for production-ready applications.
+- React-DOM: Serves as the entry point to the DOM and server renderers for React.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment and Hosting
+The application is deployed on Vercel, a cloud platform for static sites and Serverless Functions. The application is hosted at [https://arnold-portfolio-six.vercel.app/], Github; (https://github.com/eagleknite/my-developer-portfolio).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Note: The application is still under development and will see further improvements and additions.
 
-## Deploy on Vercel
+## Roadmap
+- Add a contact form.
+- Add a blog section.
+- Add a footer component.
+- Add a dark mode toggle.
+- Add a hamburger menu for mobile devices.
+- Add a favicon.
+- Add a 404 page.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+ISC
