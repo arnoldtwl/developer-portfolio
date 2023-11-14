@@ -1,6 +1,6 @@
+// app\portfolio\projects\page.js
 import styles from './project.module.css';
 import resumeData from '@/data/resume.json';
-
 
 // Projects section
 const Projects = () => {
