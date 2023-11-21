@@ -1,4 +1,4 @@
-
+// scripts\seedDatabase.js
 require('dotenv').config();
 const { db } = require('@vercel/postgres');
 const fs = require('fs');

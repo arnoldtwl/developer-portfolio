@@ -3,7 +3,7 @@
         "name": "ARNOLD TWALA",
         "label": "Assistant Librarian (Acquisition Department)",
         "email": "arnoldtwl@gmail.com",
-        "picture": "https://lh3.googleusercontent.com/pw/ADCreHcGyWXABkEWuhzB-8LYnLzKkACICOM6pCm-cKZuFB5hqeDwW19Wug4auUtmH1Y-TGa8MMX8Tx5Z6UBDvjlK3OrO2LZCcnPEgSfoqoyzIxMT3toYmNf9GeP_jI0u6wTSyUOnOEdhGuQzLxgUkT8zM3xHi76Fvk9bzxQSqTr12mY5wsE8hhDpUws8NgeGD2Q09NM0X0xaD54QrRDDOlWMbcqzx0l4fHTL4QACzatFSZQoIBHSO6YW7okZszQzOh9YARUgP5u3dbrAlil77XS3yJM583Goo331jPGF0C4QfKV-0-lvEDiaLVCRpflSVCLXy-1N13sPrKMBIwB7tT7DtpnFfDi-i6niPg8OE0qjK_8LdrZRkmmOoxdeIBu4YR8ydbk_NYQYTLoWA0kWAvGNZrYJtsdzRMiRca34niJABIuciSGe-SI8_bRpa8oLD6gB4yOSMbgqYdEcdc77BGhBx0ihWCt5lf08idEyT7vt1QYxWMv7g8rPHpQPaqARGwYMTt8VIJ2Qo3rwxVL7WdcPSUAl8v-vfPEm1yk_oh7HG7t-w30l6OK7rhnysyxhv08m2kxLel10DyEQZpP41saJlthz_3VMQfMdDWPgzeRu8BmFAEtmEP54LeHQ01kyIHE4zQruVUU8WGjRggWlJ1xVfu8Q8nogeJ3NU31vSsglPv609R4mcD4r24ckA3GVdMuNRc6_1t6VoIaCEZM-ryKknN2aufmgE4CSKrj7JGVrDafEZRBg8_Vp3YxKhOuph6R33ZG-UIvhihU1FH5DR5-gjbvlqyVTXMDovjj-OH_YeZsYS58GRGAvJMvpcBCgl9QyqqxujDhHMzMPUDSa7XhnKtyCWbOlX4d_1PRg0tGTUEObrz0VZOY1kHTKLnEeLeWzkL_US8u3HnEOwhf8028XMA=w897-h897-s-no-gm?authuser=0",
+        "picture": "/arnold.png",
         "website": "https://eagleknite.github.io/CV/",
         "phone": "0727035123",
         "location": {
@@ -66,7 +66,7 @@
         {
             "institution": "HyperionDev",
             "area": "Full Stack Web Development",
-            "studyType": "Course",
+            "studyType": "Bootcamp",
             "endDate": "2023-10-30"
         }
     ],
@@ -177,7 +177,8 @@
         {
             "name": "City & Weather Information Server",
             "description": "This program is a server that retrieves city and weather information from APIs provided by RapidAPI. It defines endpoints for getting the city and weather information based on the name of the city provided by the user.",
-            "githubLink": "https://github.com/eagleknite/city-weather-app"
+            "githubLink": "https://github.com/eagleknite/city-weather-app",
+            "deploymentLink": "https://city-weather-app-server.onrender.com/"
         },
         {
             "name": "Hangman Game",

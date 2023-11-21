@@ -3,7 +3,8 @@
     display: flex;
     justify-content: space-around;
     padding: 1em;
-    background-color: #333;
+    background-color: #2e2e2e;
+    /* Slightly lighter than black for the nav */
 }
 
 .navA {
@@ -13,6 +14,7 @@
 }
 
 .navAhover:hover {
-    color:#fff;
-    background-color: #555;
+    color: #fff;
+    background-color: #4d4d4d;
+    /* Dark grey on hover */
 }

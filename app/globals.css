@@ -1,10 +1,15 @@
 /* app\globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    /* Updated font */
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
+    /* Soft background color */
     color: #333;
+    /* Primary text color */
 }
 
 h1,
@@ -15,16 +20,20 @@ h5,
 h6 {
     margin: 0;
     padding: 0;
+    font-weight: 700;
+    /* Stronger weight for headings */
 }
 
 a {
     text-decoration: none;
-    color: #0070f3;
+    color: #ff6600;
+    /* Accent color for links */
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3;
+    color: darken(#ff6600, 10%);
+    /* Darker shade on hover */
 }
 
 section {
@@ -32,5 +41,7 @@ section {
     margin: 2em auto;
     padding: 1em;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Clean white for sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /* Softer shadow */
 }
