@@ -44,12 +44,23 @@ const Profile = async () => {
                 className={styles["social-link"]}
               >
                 {/* Render social icons from public folder svg and png */}
-                <Image
-                  src={`/images/${profile.network}.svg`}
-                  alt={`${profile.network} icon`}
-                  width={30}
-                  height={30}
-                />
+                {profile.network === "GitHub" ? (
+                  <Image
+                    src="/social_icons/Github.svg"
+                    alt="GitHub icon"
+                    width={25}
+                    height={25}
+                    priority={true}
+                  />
+                ) : profile.network === "LinkedIn" ? (
+                  <Image
+                    src="/social_icons/LinkedIn.svg"
+                    alt="LinkedIn icon"
+                    width={25}
+                    height={25}
+                    priority={true}
+                  />
+                ) : null}
               </a>
             ))}
           </div>
