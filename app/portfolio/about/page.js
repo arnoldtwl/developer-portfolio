@@ -5,24 +5,31 @@ import Profile from '@/app/ui/about/profile';
 import Education from '@/app/ui/about/education';
 import Work from '@/app/ui/about/work';
 import Skills from '@/app/ui/about/skills';
+import { 
+  AboutSummarySkeleton, 
+  ProfileSkeleton, 
+  EducationSkeleton, 
+  SkillsSkeleton, 
+  WorkSkeleton 
+} from '@/app/lib/skeletons';
 
 // About section
 export default async function About(){
     return (
       <div>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<ProfileSkeleton />}>
           <Profile />
         </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<AboutSummarySkeleton />}>
           <AboutSummary />
         </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<EducationSkeleton />}>
           <Education />
         </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<SkillsSkeleton />}>
           <Skills />
         </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<WorkSkeleton />}>
           <Work />
         </Suspense>
       </div>

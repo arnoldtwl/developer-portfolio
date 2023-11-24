@@ -1,4 +1,3 @@
-/* app\portfolio\projects\project.module.css */
 .projectsContainer {
     display: flex;
     flex-wrap: wrap;
@@ -6,11 +5,13 @@
 }
 
 .project {
+    background-color: #f7f7f7;
     width: 45%;
     margin: 1em 0;
     border: 1px solid #e1e1e1;
     padding: 1em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .h1 {
@@ -30,4 +31,58 @@
 
 .aHover:hover {
     text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .projectsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+    }
+}
+
+/* Skeleton styles */
+.projectSkeleton {
+    width: 45%;
+    margin: 1em 0;
+    background-color: #f7f7f7;
+    border: 1px solid #e1e1e1;
+    padding: 1em;
+    position: relative;
+    overflow: hidden;
+}
+
+.skeletonShimmer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right,
+            #f7f7f7 0%,
+            #e0e0e0 20%,
+            #f7f7f7 40%,
+            #f7f7f7 100%);
+    animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .projectSkeleton {
+        width: 90%;
+    }
 }

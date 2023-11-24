@@ -7,9 +7,10 @@ export default async function AboutSummary() {
     if (!aboutData) {
         return <div>Failed to load about data</div>;
     }
+
     return (
         <section className={styles.about}>
-            <h1>About Me</h1>
+            <h1 className={styles.aboutHeading}>About Me</h1>
             <p>{aboutData.summary}</p>
         </section>
     );

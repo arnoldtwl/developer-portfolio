@@ -68,7 +68,7 @@ export async function getWork() {
             SELECT * FROM work;
         `;
 
-        console.log('result', result.rows)
+        // console.log('result', result.rows)
         const workData = result.rows.map((work) => {
             const startDate = convertDate(work.startdate);
             const endDate = convertDate(work.enddate);

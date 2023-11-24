@@ -14,25 +14,47 @@ const Profile = async () => {
     }
 
     return (
-        <section className={styles['profile-container']}>
-            <div className={styles['profile-info']}>
-                <h2 className={styles.heading}>{basicData.name}</h2>
-                <Image 
-                    src={basicData.picture}
-                    alt="Profile-image" 
-                    className={styles['profile-image']} 
-                    width={250}
-                    height={250}
+      <section className={styles["profile-container"]}>
+        <div className={styles["profile-info"]}>
+          <h2 className={styles.heading}>{basicData.name}</h2>
+          <div className={styles["image-container"]}>
+            <Image
+              src={basicData.picture}
+              alt="Profile image"
+              width={250}
+              height={250}
+              priority={true}
+              className={styles["profile-image"]}
+            />
+            {/* Add hover effect here */}
+          </div>
+          <h5 className={styles.heading}>{basicData.label}</h5>
+          <h5 className={styles.heading}>
+            Website:{" "}
+            <a href={basicData.website} className={styles.website}>
+              {basicData.website}
+            </a>
+          </h5>
+          <div className={styles["social-links"]}>
+            {/* Render social media icons here */}
+            {profileData.map((profile) => (
+              <a
+                href={profile.url}
+                key={profile.network}
+                className={styles["social-link"]}
+              >
+                {/* Render social icons from public folder svg and png */}
+                <Image
+                  src={`/images/${profile.network}.svg`}
+                  alt={`${profile.network} icon`}
+                  width={30}
+                  height={30}
                 />
-                <h5 className={styles.heading}>{basicData.label}</h5>
-                <h5 className={styles.heading}>Website: <a href={basicData.website} className={styles.website}>{basicData.website}</a></h5>
-                {profileData.map((profile) => (
-                    <h5 className={styles.heading} key={profile.network}>
-                        {profile.network} <a href={profile.url} className={styles.website}>{profile.url}</a>
-                    </h5>
-                ))}
-            </div>
-        </section>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
     );
 };
 

@@ -9,11 +9,16 @@ const Skills = async () => {
     }
     return (
         <section>
-            <h2>Skills</h2>
+            <h2 className={styles.heading}>Skills</h2>
             <div className={styles['skills-container']}>
                 {skillsData.map((skill, id) => (
                     <div key={id} className={styles.skill}>
+                        {/* Replace paragraph with icon or progress bar */}
+                        {/* For icons, you can use an icon library like FontAwesome or custom SVGs */}
+                        <span className="material-icons-outlined">{skill.icon}</span>
                         <p>{skill.name}</p>
+                        {/* Optionally, add a progress bar or skill level indicator here */}
+                        {/* Add tooltip or hover effect to show more information */}
                     </div>
                 ))}
             </div>

@@ -1,10 +1,20 @@
 /* app\components\header.module.css */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+    /* Add a defined height if not already present */
+    height: 60px; 
+}
+
+/* Rest of your CSS */
+
+
 .nav {
     display: flex;
     justify-content: space-around;
     padding: 1em;
-    background-color: #2e2e2e;
-    /* Slightly lighter than black for the nav */
 }
 
 .navA {
@@ -13,8 +23,7 @@
     padding: 0.5em 1em;
 }
 
-.navAhover:hover {
+.navA:hover, .navA.active {
     color: #fff;
-    background-color: #4d4d4d;
-    /* Dark grey on hover */
+    background-color: #555;
 }

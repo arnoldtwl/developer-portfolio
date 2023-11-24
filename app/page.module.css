@@ -1,7 +1,32 @@
 /* app\page.module.css */
-.section {
+.hero {
   text-align: center;
-  padding: 3em 0;
+  padding: 4em 0;
+  background-color: #e6e8e9;
+  opacity: 0.9;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    opacity(0.5);
+  ;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+.p {
+  max-width: 600px;
+  margin: auto;
+ text-align: center;
+  font-size: 1.25em;
+    color: #333;
+    margin-bottom: 1em;
 }
 
 .cta-buttons {
@@ -17,8 +42,42 @@
   padding: 0.75em 1.5em;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  text-decoration: none;
+  /* Remove underline from links */
 }
 
 .cta-button:hover {
   background-color: #0056b3;
+}
+
+/* Add responsive design styles */
+@media (max-width: 768px) {
+  .hero {
+    padding: 2em 1em;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Optional image styles */
+.imageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* Ensures the image stays in the background */
+  /* opacity: 0.5; */
+  /* Make the image semi-transparent */
+  background-position: center;
+  /* Center the image */
+  background-size: cover;
+  /* Cover the entire container */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-blend-mode: multiply;
+  /* Blend the image with the background color */
 }

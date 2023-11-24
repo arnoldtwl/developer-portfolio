@@ -4,10 +4,24 @@
     gap: 1em;
 }
 
+.image-container {
+    position: relative;
+    /* Styling for image hover effect */
+}
+
 .profile-image {
     border-radius: 50%;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     margin: 1em 0;
+    /* Add hover transition effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover .profile-image {
+    /* Define hover effect, e.g., scale or rotate slightly */
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
 }
 
 .heading {
@@ -23,25 +37,168 @@
     text-decoration: underline;
 }
 
+.website:visited {
+    color: #00a6f3;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-link {
+    /* Style for social media icons */
+    color: #333;
+    font-size: 1.5em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-link:hover {
+    /* Define hover effect, e.g., change color or add animation */
+    color: #0070f3;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.material-icons-outlined {
+    font-size: 24px;
+    /* Adjust icon size */
+    margin-right: 0.5em;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.education-card {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education-logo {
+    /* Style for school logo or icon */
+    width: 50px;
+    /* Adjust size as needed */
+    height: 50px;
+    /* Adjust size as needed */
+    margin-right: 1em;
+    /* Add more styling as needed */
+}
+
+.education-content {
+    flex-grow: 1;
+}
+
 .about,
 .section {
     padding: 2em;
     border-bottom: 1px solid #e6e8e9;
 }
 
+.aboutHeading {
+    font-size: 2em;
+    /* Larger font size for heading */
+}
+
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
+    justify-content: center;
+    /* Center align the skills */
 }
 
 .skill {
+    display: flex;
+    align-items: center;
+    /* Align icon and text */
     background-color: #e6e8e9;
     padding: 0.5em 1em;
     border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    /* Indicates interactivity */
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    /* Hover effect for interactivity */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .work-item,
 .education-item {
     margin-bottom: 2em;
+}
+
+/* work styling */
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+.timeline-icon {
+    /* Style for timeline icon */
+    width: 30px;
+    height: 30px;
+    /* background-color: #0070f3; */
+    /* Example color, can be replaced with an actual logo */
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+    /* Prevent icon from shrinking */
+    margin-right: 1em;
+}
+
+.timeline-content {
+    background-color: #f7f7f7;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+/* Skeleton styles in about.module.css */
+
+.skeletonText {
+    background-color: #e0e0e0;
+    color: transparent;
+    border-radius: 4px;
+}
+
+.skeletonImage {
+    width: 250px;
+    height: 250px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+}
+
+.skeletonSocialIcon {
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
 }
