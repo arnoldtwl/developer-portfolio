@@ -29,8 +29,8 @@ export default function Home() {
       </section>
       <div className={styles.imageWrapper}>
           <Image 
-            src="/hero_image2.png" 
-            alt="Your Alt Text" 
+            src="/homepage.png" 
+            alt="Homepage image" 
             priority={true}
             quality={100}
             fill={true}

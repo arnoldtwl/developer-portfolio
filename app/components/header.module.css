@@ -1,20 +1,18 @@
 /* app\components\header.module.css */
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
-    background-color: #333;
+    background-color: transparent;
     z-index: 1000;
-    /* Add a defined height if not already present */
-    height: 60px; 
+    width: 100%;
+    height: 60px;
 }
-
-/* Rest of your CSS */
-
 
 .nav {
     display: flex;
     justify-content: space-around;
     padding: 1em;
+    transition: all 0.3s ease;
 }
 
 .navA {
@@ -23,7 +21,66 @@
     padding: 0.5em 1em;
 }
 
-.navA:hover, .navA.active {
-    color: #fff;
+.navA:hover,
+.navA.active {
     background-color: #555;
+}
+
+.mobileMenuIcon {
+    display: none;
+    /* Hidden on larger screens */
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2001;
+    /* Ensure it's above other elements */
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .header {
+        position: fixed;
+        /* Adjust if needed */
+        height: 60px;
+        /* Maintain fixed height */
+    }
+
+    .nav {
+        display: none;
+        /* Hidden by default */
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: flex-start;
+        /* Align items to the start */
+        position: fixed;
+        /* Fixed position to stay on screen */
+        top: 60px;
+        /* Position below the header */
+        left: 0;
+        /* Align to the left */
+        width: 100%;
+        /* Full width of the screen */
+        background-color: transparent;
+        /* Match header background */
+        padding-top: 1em;
+        /* Space at the top */
+        z-index: 2000;
+        /* High z-index to overlay content */
+    }
+
+    .navA:hover,
+    .navA.active {
+        background-color: transparent;
+    }
+
+    .navMobileOpen {
+        display: flex;
+        /* Display flex when opened */
+    }
+
+    .mobileMenuIcon {
+        display: block;
+        /* Show the menu icon */
+    }
 }

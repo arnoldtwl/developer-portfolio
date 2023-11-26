@@ -32,9 +32,15 @@ echo ".env" >> .gitignore
 # vercel
 .vercel
 
-# json files
 /data/resume.json
-```
 
+# mdx files
+
+```mdx
+---
+title: 'Nextjs_14_app_router_full'
+'
+# mdx files
+*.mdx
 
 

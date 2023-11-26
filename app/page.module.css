@@ -3,13 +3,15 @@
   text-align: center;
   padding: 4em 0;
   background-color: #e6e8e9;
-  opacity: 0.9;
+  opacity: 0.98;
+  border-radius: 6px;
   background:
     linear-gradient(
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
     ),
-    opacity(0.5);
+    /* url(/public/hero_image2.png), */
+    #e6e8e9;
   ;
   position: relative;
 }
@@ -25,7 +27,7 @@
   margin: auto;
  text-align: center;
   font-size: 1.25em;
-    color: #333;
+    color: #fff;
     margin-bottom: 1em;
 }
 
