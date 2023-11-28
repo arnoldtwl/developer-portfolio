@@ -1,6 +1,7 @@
 // app\ui\projects\projects.js
 import styles from "@/app/portfolio/projects/project.module.css";
 import { getProjects, getProjectFrontend, getProjectBackend } from "@/app/lib/data";
+import Image from "next/image";
 
 // Projects section
 const Projects = async () => {
@@ -23,6 +24,15 @@ const Projects = async () => {
         }
     });
 
+    const linkIcon = (
+      <Image
+        src="/link_white.svg"
+        alt="link icon"
+        width={30}
+        height={30}
+        className={styles.linkIcon } 
+      />
+    ); 
   
     if (!projectsData) {
         return <div>Failed to load projects data</div>;
@@ -46,7 +56,7 @@ const Projects = async () => {
                     rel="noopener noreferrer"
                     className={`${styles.a} ${styles.aHover}`}
                   >
-                    {project.github}
+                    {linkIcon}
                   </a>
                 </p>
               )}
@@ -59,7 +69,7 @@ const Projects = async () => {
                     rel="noopener noreferrer"
                     className={`${styles.a} ${styles.aHover}`}
                   >
-                    {project.deployment}
+                    {linkIcon}
                   </a>
                 </p>
               )}
@@ -75,7 +85,7 @@ const Projects = async () => {
                       rel="noopener noreferrer"
                       className={`${styles.a} ${styles.aHover}`}
                     >
-                      {project.frontend.github}
+                      {linkIcon}
                     </a>
                   </p>
                   <p>
@@ -86,7 +96,7 @@ const Projects = async () => {
                       rel="noopener noreferrer"
                       className={`${styles.a} ${styles.aHover}`}
                     >
-                      {project.frontend.deployment}
+                      {linkIcon}
                     </a>
                   </p>
                 </div>
@@ -102,7 +112,7 @@ const Projects = async () => {
                       rel="noopener noreferrer"
                       className={`${styles.a} ${styles.aHover}`}
                     >
-                      {project.backend.github}
+                      {linkIcon}
                     </a>
                   </p>
                   <p>
@@ -113,7 +123,7 @@ const Projects = async () => {
                       rel="noopener noreferrer"
                       className={`${styles.a} ${styles.aHover}`}
                     >
-                      {project.backend.deployment}
+                      {linkIcon}
                     </a>
                   </p>
                 </div>

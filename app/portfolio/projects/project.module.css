@@ -1,3 +1,4 @@
+/* app\portfolio\projects\project.module.css */
 .projectsContainer {
     display: flex;
     flex-wrap: wrap;
@@ -27,6 +28,15 @@
 .a {
     color: #0070f3;
     text-decoration: none;
+}
+
+/* Add this to your project.module.css */
+.linkIcon {
+    vertical-align: middle;
+    /* Aligns the icon vertically with the adjacent text */
+    margin-right: 0.5em;
+    /* Adds some space between the icon and the text */
+    
 }
 
 .aHover:hover {
