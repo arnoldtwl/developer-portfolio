@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import styles from '@/app/portfolio/about/about.module.css';
 import { getBasics, getProfiles } from '@/app/lib/data';
+import { teko } from '../fonts';
 
 const Profile = async () => {
     const basicData = await getBasics();
@@ -16,7 +17,7 @@ const Profile = async () => {
     return (
       <section className={styles["profile-container"]}>
         <div className={styles["profile-info"]}>
-          <h2 className={styles.heading}>{basicData.name}</h2>
+          <h2 className={`${styles.heading} ${teko.className}`}>{basicData.name}</h2>
           <div className={styles["image-container"]}>
             <Image
               src={basicData.picture}

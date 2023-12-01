@@ -50,3 +50,39 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     /* Softer shadow */
 }
+
+.error {
+    background-color: #f7f7f7;
+    color: #0070f3;
+    /* Error text color */
+    /* display error box in center of page */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.error h1 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+}
+
+.error p {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.error button {
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.error button:hover {
+    background-color: darken(#ff6600, 10%);
+}

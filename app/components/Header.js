@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import styles from "./header.module.css";
 import { useState } from "react";
 import Image from "next/image";
+import { oswald } from "../ui/fonts";
 
 
 const Header = () => {
@@ -22,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${oswald.className}`}>
       <div className={styles.mobileMenuIcon} onClick={toggleMobileMenu}>
         {/* Add mobile menu icon (e.g., hamburger icon) */}.
         <Image src="/menu/menu.svg" alt="menu" width={30} height={30} />

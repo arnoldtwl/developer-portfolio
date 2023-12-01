@@ -2,6 +2,7 @@
 import styles from "@/app/portfolio/projects/project.module.css";
 import { getProjects, getProjectFrontend, getProjectBackend } from "@/app/lib/data";
 import Image from "next/image";
+import { oswald, merriweatherSans } from "../fonts";
 
 // Projects section
 const Projects = async () => {
@@ -41,12 +42,12 @@ const Projects = async () => {
   return (
     <div>
       <section>
-        <h1 className={styles.h1}>Projects</h1>
+        <h1 className={`${styles.h1} ${oswald.className}`}>Projects</h1>
         <div className={styles.projectsContainer}>
           {projectsData.map((project, id) => (
             <div key={id} className={styles.project}>
-              <h2 className={styles.h2}>{project.name}</h2>
-              <p>{project.description}</p>
+              <h2 className={`${styles.h2} ${oswald.className}`}>{project.name}</h2>
+              <p className={merriweatherSans.className}>{project.description}</p>
               {project.github && (
                 <p>
                   <strong>GitHub:</strong>{" "}

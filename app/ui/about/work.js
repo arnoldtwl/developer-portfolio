@@ -2,6 +2,7 @@
 import styles from '@/app/portfolio/about/about.module.css';
 import { getWork } from '@/app/lib/data';
 import Image from 'next/image';
+import { oswald, merriweatherSans } from "../fonts";
 
 const Work = async () => {
     const workData = await getWork();
@@ -10,7 +11,7 @@ const Work = async () => {
     }
     return (
         <section>
-            <h2 className={styles.heading}>Work Experience</h2>
+            <h2 className={`${styles.heading}`}>Work Experience</h2>
             <div className={styles['timeline']}>
                 {workData.map((work, id) => (
                     <div key={id} className={styles['timeline-item']}>
@@ -25,11 +26,10 @@ const Work = async () => {
                             />
                         </div>
                         <div className={styles['timeline-content']}>
-                            <h3>{work.position}</h3>
+                            <h3 className={oswald.className}>{work.position}</h3>
                             <h4>{work.company}</h4>
                             <p>{work.startDate} - {work.endDate}</p>
-                            <p>{work.summary}</p>
-                            {/* Additional details like location or project highlights */}
+                            <p className={merriweatherSans.className}>{work.summary}</p>
                         </div>
                     </div>
                 ))}

@@ -2,6 +2,7 @@
 import styles from '@/app/portfolio/about/about.module.css';
 import { getEducation } from '@/app/lib/data';
 import Image from 'next/image';
+import { oswald, merriweatherSans } from "../fonts";
 
 const Education = async () => {
     const educationData = await getEducation();
@@ -26,8 +27,8 @@ const Education = async () => {
                 />
               </div>
               <div className={styles["education-content"]}>
-                <h4>{school.institution}</h4>
-                <p>
+                <h4 className={oswald.className}>{school.institution}</h4>
+                <p className={merriweatherSans.className}>
                   {school.area}, {school.studyType}
                 </p>
                 <p>{school.endDate}</p>

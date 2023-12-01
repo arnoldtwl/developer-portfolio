@@ -111,6 +111,10 @@
     border-bottom: 1px solid #e6e8e9;
 }
 
+.about p {
+    font-size: 1.5em;
+}
+
 .aboutHeading {
     font-size: 2em;
     /* Larger font size for heading */
