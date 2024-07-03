@@ -20,7 +20,7 @@ export default function Contact() {
             </li>
             <li className={styles.li}>Phone: 0727035123</li>
             <li className={styles.li}>
-              Location: Greater Giyani Municipality, Limpopo, ZA
+              Location: Polokwane, Mankweng, Limpopo, ZA
             </li>
           </ul>
         </section>

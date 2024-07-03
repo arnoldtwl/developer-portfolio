@@ -1,20 +1,20 @@
 // app\components\Header.js
-'use client';
+"use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./header.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { oswald } from "../ui/fonts";
 
-
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const pathname = usePathname();
 
   const isActive = (path) => pathname === path;
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
-  
+
   const getMenuItemColor = () => {
     if (pathname === "/") {
       return "white"; // White color for home page
@@ -22,10 +22,52 @@ const Header = () => {
     return "black"; // Black or other color for other pages
   };
 
+  useEffect(() => {
+    let timeout;
+    const handleMouseMove = () => {
+      setIsHeaderVisible(true);
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        setIsHeaderVisible(false);
+      }, 3000);
+    };
+
+    const handleScroll = () => {
+      setIsHeaderVisible(true);
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        setIsHeaderVisible(false);
+      }, 3000);
+    };
+
+    const checkScreenSize = () => {
+      if (window.innerWidth > 768) {
+        // Only apply to desktop
+        window.addEventListener("mousemove", handleMouseMove);
+        window.addEventListener("scroll", handleScroll);
+      } else {
+        window.removeEventListener("mousemove", handleMouseMove);
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", checkScreenSize);
+    };
+  }, []);
+
   return (
-    <header className={`${styles.header} ${oswald.className}`}>
+    <header
+      className={`${styles.header} ${
+        isHeaderVisible ? styles.headerVisible : styles.headerHidden
+      } ${oswald.className}`}
+    >
       <div className={styles.mobileMenuIcon} onClick={toggleMobileMenu}>
-        {/* Add mobile menu icon (e.g., hamburger icon) */}.
         <Image src="/menu/menu.svg" alt="menu" width={30} height={30} />
       </div>
       <nav
