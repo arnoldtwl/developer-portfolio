@@ -93,7 +93,7 @@ export async function getWork() {
 export async function getSkills() {
     try {
         const result = await sql`
-            SELECT * FROM skills;
+            SELECT skills.id, skills.name FROM skills;
         `;
 
         const skillsData = result.rows.map((skill) => {
@@ -103,7 +103,15 @@ export async function getSkills() {
             };
         });
 
-        return skillsData;
+        // Filter out  duplicate skills, null, undefined, and empty strings
+        const uniqueSkills = skillsData.filter((skill, index, self) =>
+            index === self.findIndex((t) => (
+                t.name === skill.name && t.name && skill.name
+            ))
+        );
+
+        // console.log('uniqueSkills', uniqueSkills)
+        return uniqueSkills;
     } catch (error) {
         console.error('Database error in getSkills:', error);
         throw new Error('Failed to fetch skills');
