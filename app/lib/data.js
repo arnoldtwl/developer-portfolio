@@ -6,11 +6,15 @@ import { convertDate } from './utils';
 
 export async function getBasics() {
     try {
-        const data = await sql`SELECT * FROM basics;
+        const data = await sql`
+            SELECT * FROM basics
+            ORDER BY id DESC
+            LIMIT 1;
         `;
 
-        // console.log('data', data.rows)
-        return data.rows[0];
+        // Filter out duplicate profiles, null, undefined, and empty strings
+        const basicsData = data.rows[0];
+        return basicsData;
     } catch (error) {
         console.error('Database error in getBasics:', error);
         throw new Error('Failed to fetch basics');
@@ -20,18 +24,26 @@ export async function getBasics() {
 export async function getProfiles() {
     try {
         const result = await sql`
-            SELECT profiles.network, profiles.url FROM profiles;
+            SELECT * FROM profiles;
         `;
         // console.log('result', result.rows)
         const profilesData = result.rows.map((profile) => {
             return {
+                id: profile.id,
                 network: profile.network,
                 url: profile.url
             };
         });
 
-        // console.log('profilesData', profilesData)
-        return profilesData;
+        // Filter out duplicate profiles, null, undefined, and empty strings
+        const uniqueProfiles = profilesData.filter((profile, index, self) =>
+            index === self.findIndex((t) => (
+                t.url === profile.url && t.url && profile.url
+            ))
+        );
+
+        // console.log('uniqueProfiles', uniqueProfiles)
+        return uniqueProfiles;
     } catch (error) {
         console.error(`Database error in getProfiles:`, error);
         throw new Error('Failed to fetch profiles');
